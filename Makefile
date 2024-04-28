@@ -1,8 +1,3 @@
-#  Makefile 
-#  Auteur : Farès BELHADJ
-#  Email  : amsi@up8.edu
-#  Date   : 28/04/2020
-# définition des commandes utilisées
 CC = gcc
 ECHO = echo
 RM = rm -f
@@ -21,7 +16,7 @@ PROGNAME = transform
 VERSION = 1.2
 distdir = $(PACKNAME)_$(PROGNAME)-$(VERSION)
 HEADERS = 
-SOURCES = window.c
+SOURCES = main.c
 MSVCSRC = $(patsubst %,<ClCompile Include=\"%\\\" \\/>,$(SOURCES))
 OBJ = $(SOURCES:.c=.o)
 DOXYFILE = documentation/Doxyfile
